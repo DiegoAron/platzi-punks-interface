@@ -1,7 +1,12 @@
+import { Route } from 'reac-router-dom';
+import Home from './views/home';
+
+
 
 function App() {
   return (
-    <p>Hi m3n</p>
+    <Route path="/" exact component={Home}/>
+  
   );
 }
 
