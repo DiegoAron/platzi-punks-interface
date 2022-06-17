@@ -1,12 +1,13 @@
-import { Route } from 'reac-router-dom';
-import Home from './views/home';
-
-
+import { Route, Routes } from 'react-router-dom';
+import Home from './views/home/index.js';
 
 function App() {
   return (
-    <Route path="/" exact component={Home}/>
-  
+    <>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+    </Routes>
+    </>
   );
 }
 
