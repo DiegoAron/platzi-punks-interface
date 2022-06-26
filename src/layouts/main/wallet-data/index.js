@@ -20,6 +20,7 @@ const WalletData = () => {
 
   const isUnsupportedChain = error instanceof UnsupportedChainIdError;
 
+  /* To auto connect */
   const connect = useCallback(() => {
     activate(connector);
     localStorage.setItem("previouslyConnected", "true");
@@ -32,7 +33,7 @@ const WalletData = () => {
 
   const getBalance = useCallback(async () => {
     const toSet = await library.eth.getBalance(account);
-    setBalance((toSet / 1e18).toFixed(2));
+    setBalance((toSet / 1e18).toFixed(2)); // to clean decimals
   }, [library?.eth, account]);
 
   useEffect(() => {

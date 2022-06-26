@@ -1,6 +1,7 @@
-import { useMemo } from "react";
+import { useMemo } from "react"; //evita calculos multiplicados
 import { useWeb3React } from "@web3-react/core";
 import PlatziPunksArtifact from "../../config/web3/artifacts/PlatziPunks";
+
 
 const { address, abi } = PlatziPunksArtifact;
 
