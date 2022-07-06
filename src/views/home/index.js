@@ -20,7 +20,7 @@ import {
     
     const [isMinting, setIsMinting] =useState(false);
     const [imageSrc, setImageSrc] = useState(""); //seteo de la img
-    const [totalSupply, setTotalSupply] = useState(0); //seteo de next ID con totasupply
+    const [totalSupply, setTotalSupply] = useState(0); //seteo de next ID con totasupply jejej
     const { active, account } = useWeb3React();
     const platziPunks = usePlatziPunks();
     const toast = useToast();
