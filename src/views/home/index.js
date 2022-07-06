@@ -17,6 +17,7 @@ import {
 
   const Home = () => {
 
+    
     const [isMinting, setIsMinting] =useState(false);
     const [imageSrc, setImageSrc] = useState(""); //seteo de la img
     const [totalSupply, setTotalSupply] = useState(0); //seteo de next ID
@@ -164,9 +165,9 @@ import {
             <>
               <Flex mt={2}>
                 <Badge>
-                  Next ID:
+                  Next ID: 
                   <Badge ml={1} colorScheme="green">
-                    {totalSupply+1}
+                    {totalSupply+1} 
                   </Badge>
                 </Badge>
                 <Badge ml={2}>

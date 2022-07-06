@@ -11,7 +11,7 @@ function App() {
     <Routes>
     <Route path="/" exact element={<Home />}/>
     <Route path="/punks" exact element={<Punks/>} />
-    <Route path="/punks/:tokenId" exact element={<Punk/>} />
+    <Route path="/punks/:tokenId" exact element={<Punk/>} /> 
    
     </Routes>
     </MainLayout>
