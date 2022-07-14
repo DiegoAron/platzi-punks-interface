@@ -68,7 +68,7 @@ const getPunkData = async ({ platziPunks, tokenId }) => {
 };
 
 // Plural
-const usePlatziPunksData = ({ owner = null } = {}) => {
+  const usePlatziPunksData = ({ owner = null } = {}) => {
   const [punks, setPunks] = useState([]);
   const { library } = useWeb3React();
   const [loading, setLoading] = useState(true);

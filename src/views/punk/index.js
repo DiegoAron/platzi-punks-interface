@@ -34,7 +34,7 @@ import {
   
       const address = prompt("Ingresa la dirección: ");
   
-      const isAddress = library.utils.isAddress(address);
+      const isAddress = library.utils.isAddress(address); //Chequea que el address sea correcta
   
       if (!isAddress) {
         toast({
@@ -66,7 +66,9 @@ import {
               description: `El punk ahora pertenece a ${address}`,
               status: "success",
             });
+
             update();
+          
           });
       }
     };
