@@ -26,7 +26,7 @@ const Punks = () => {
   const [validAddress, setValidAddress] = useState(true);
   const { active, library } = useWeb3React();
   const {punks, loading} = usePlatziPunksData({
-    owner: submitted && validAddress ? address : "",
+    owner: submitted && validAddress ? address : null,
   });
 
 
