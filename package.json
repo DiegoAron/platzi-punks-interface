@@ -1,13 +1,13 @@
 {
   "name": "platzi-punks-interface",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-  
+    "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "@web3-react/core": "^6.1.9",
@@ -26,7 +26,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",

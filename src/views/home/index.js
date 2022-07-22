@@ -36,6 +36,7 @@ import {
           .call();
         const image = await platziPunks.methods.imageByDNA(dnaPreview).call();
         setImageSrc(image);
+        console.log("imagen: "+image)
       }
     }, [platziPunks, account]);  //account sencible a cambios
   
@@ -87,7 +88,7 @@ import {
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
-        py={{ base: 20, md: 28 }}
+        py={{ base: 20, md: 20 }}
         direction={{ base: "column-reverse", md: "row" }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>

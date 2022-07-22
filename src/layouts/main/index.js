@@ -6,10 +6,9 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
-  Image,
   Heading,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, LinkIcon} from "@chakra-ui/icons";
 import NavLink from "./nav-link";
 import Footer from "./footer";
 import WalletData from "./wallet-data";
@@ -20,8 +19,8 @@ const Links = [
     to: "/",
   },
   {
-    name: "Punks",
-    to: "/punks",
+    name: "Avatars",
+    to: "/avatars",
   },
 ];
 
@@ -58,9 +57,10 @@ const MainLayout = ({ children }) => {
           />
           <HStack spacing={8} alignItems={"center"}>
             <Flex alignItems="center">
-              <Image src="./images/platzi.svg" width="80px" />
+              <LinkIcon w={8} h={8} color="green.500" />
+              
               <Heading size="md" color="purple" mt={0.2} ml={1}>
-                Punks
+                CryptoAvatars
               </Heading>
             </Flex>
             <HStack
