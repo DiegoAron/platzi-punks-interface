@@ -1,4 +1,4 @@
-# React NFT Example App
+# NFT Example App with React
 
 Easy way to interact with NFT (ERC721) in Reactjs. Running on Rinkeby.
 
@@ -17,5 +17,4 @@ Easy way to interact with NFT (ERC721) in Reactjs. Running on Rinkeby.
 Runs the app in the development mode. You need to be on Rinkeby Network with Metamask.
 
 
-This is only educative terms. 
-
+App only for educative purposes
